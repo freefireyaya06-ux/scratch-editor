@@ -35,6 +35,10 @@ jobs:
         working-directory: packages/scratch-gui
         run: npm install
 
+      - name: Install Capacitor dependencies
+        working-directory: packages/scratch-gui
+        run: npm install @capacitor/core @capacitor/cli @capacitor/android
+
       - name: Build scratch-gui production files
         working-directory: packages/scratch-gui
         run: npm run build
